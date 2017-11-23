@@ -16,7 +16,7 @@ for file in files:
 			for subsubfile in subsubfiles:
 				# rename the mfcc file
 				subsubfile_temp = subsubfile.replace(".wav", ".mfc")
-				filename = subsubfile_temp[-8:-4]
+				filename = subsubfile_temp[-8:]
 				num = ord(filename[0]) - 64
 				filename = filename.replace(filename[0], str(num)+'_')
 				print 'Processing %s into %s' % (subsubfile, filename)
