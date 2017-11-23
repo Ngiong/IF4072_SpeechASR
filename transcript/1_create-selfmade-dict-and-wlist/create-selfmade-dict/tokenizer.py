@@ -29,5 +29,5 @@ for line in file:
 		trans = split_trans[idx]
 		word_dict[word] = word2phonem(trans)
 
-for key, value in word_dict.items():
-	print(key, '\t\t', value)
+for key, value in sorted(word_dict.items()):
+	print(key, ' ', value)
