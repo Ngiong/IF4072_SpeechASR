@@ -31,7 +31,7 @@ def gen_hmmdefs(path, template):
     add_sil_to_monophones()
 
     print(template)
-    with open(MONOPHONE_FILE, 'r') as fin:
+    with open(MONOPHONE0_FILE, 'r') as fin:
         phones = [line.strip('\n') for line in fin]
 
     hmmdefs_file = path + '/hmmdefs'
@@ -49,9 +49,10 @@ def gen_macros(path, proto_top):
         fout.write(proto_top)
         fout.write(vfloors_data)
 
+# NOTE: ini cuma run HMM0 - HMM3 karena HMM4 udah pakai monophones1 dan ada konfigurasi sendiri lagi
 def run_hmm(n_epoch):
     for epoch in range(1, n_epoch + 1):
         # HERest -A -D -T 1 -C {hmm.conf} -I {phones.mlf} -t 250.0 150.0 1000.0 -S {mfcc_list.scp} -H {hmm/macros} -H {hmm/hmmdefs} -M {hmm_result/hmm} {monophones}
         cmd = "HERest -A -D -T 1 -C %s -I %s -t 250.0 150.0 1000.0 -S %s -H hmm_result/hmm%d/macros -H hmm_result/hmm%d/hmmdefs -M hmm_result/hmm%d %s"
-        args = (HMM_CONF_FILE, PHONES_MLF_FILE, MFCC_LIST_FILE, epoch-1, epoch-1, epoch, MONOPHONE_FILE)
+        args = (HMM_CONF_FILE, PHONES_MLF_FILE, MFCC_LIST_FILE, epoch-1, epoch-1, epoch, MONOPHONE0_FILE)
         utils.run(cmd % args)
