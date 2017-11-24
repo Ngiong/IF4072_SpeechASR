@@ -5,7 +5,9 @@ from scripts.consts import *
 def gen_scp():
 	data_directory = ['set_1', 'set_2', 'set_3', 'set_4', 'set_5']
 	files = os.listdir('./Dataset/')
-	f = open(SCP_FILE, 'w')
+	f = open(MFCC_MAPPING_FILE, 'w')
+	mfcc_list_f = open(MFCC_LIST_FILE, 'w')
+
 	if not os.path.exists('./Dataset_MFCC/'):
 		os.mkdir('./Dataset_MFCC/')
 	for file in files:
@@ -29,10 +31,11 @@ def gen_scp():
 					result_range = './Dataset_MFCC' + '/' + file + '/' + subfile + '/' + filename
 					result_domain = './Dataset/' + file + '/' + subfile + '/' + subsubfile + ' ' + result_range
 					f.write(result_domain + '\n')
+					mfcc_list_f.write(result_range + '\n')
 	f.close()
 
 def gen_mfcc():
 	# HCopy -A -D -T 1 -C <wav_config_file> -S <wav_config_file>
 	cmd = "HCopy -A -D -T 1 -C %s -S %s "
-	args = (WAV_CONF, SCP_FILE)
+	args = (WAV_CONF, MFCC_MAPPING_FILE)
 	utils.run(cmd % args)
