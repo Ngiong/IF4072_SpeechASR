@@ -4,8 +4,11 @@ from scripts.consts import *
 
 def prepare_hmm():
     output_dir = HMM_OUTPUT_DIR + "hmm0"
-    if not os.path.exists(output_dir):
-        os.mkdir(output_dir)
+
+    for i in range (4):
+        hmm_dir = HMM_OUTPUT_DIR + "hmm" + str(i)
+        if not os.path.exists(hmm_dir):
+            os.mkdir(hmm_dir)
 
     # HCompV -A -D -T 1 -C {config} -f 0.01 -m -S {mfcc_list.scp} -M {output_dir} {proto}
     cmd = "HCompV -A -D -T 1 -C %s -f 0.01 -m -S %s -M %s %s"
@@ -23,8 +26,8 @@ def prepare_hmm():
     gen_macros(output_dir, proto_top)
 
 def add_sil_to_monophones():
-    if 'sil' not in open(MONOPHONE_FILE).read():
-        with open(MONOPHONE_FILE, 'a') as fout:
+    if 'sil' not in open(MONOPHONE0_FILE).read():
+        with open(MONOPHONE0_FILE, 'a') as fout:
             fout.write('sil\n')
 
 def gen_hmmdefs(path, template):
