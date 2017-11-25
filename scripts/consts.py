@@ -30,4 +30,12 @@ HMM_OUTPUT_DIR = "hmm_result/"
 MKTRI_FILE = "scripts/files/triphones/mktri.led"
 TRIPHONE1_FILE = "scripts/files/triphones/triphones1"
 WINTRI_MLF_FILE = "scripts/files/triphones/wintri.mlf"
-MKTRI_HED_FILE = "scripts/files/triphones/mktri.hed"
+MKTRI_HED_FILE = "mktri.hed"
+STAT_FILE = "stat"
+
+MAKETRIPHONESDED_FILE = "scripts/files/triphones/maketriphones.ded"
+FULLLIST0_FILE = "scripts/files/triphones/fulllist0"
+FULLLIST_FILE = "fulllist"
+DICT_TRI_FILE = "scripts/files/triphones/dict-tri"
+
+TREE_HED_FILE = "scripts/files/triphones/tree.hed"
