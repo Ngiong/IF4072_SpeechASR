@@ -1,6 +1,7 @@
 import os
 import scripts.utils as utils
 from scripts.consts import *
+from shutil import copyfile
 
 def prepare_hmm():
     output_dir = HMM_OUTPUT_DIR + "hmm0"
@@ -52,10 +53,62 @@ def gen_macros(path, proto_top):
         fout.write(proto_top)
         fout.write(vfloors_data)
 
+def prepare_silence_model():
+    # copy the content of hmm3 to hmm4
+    files = os.listdir(HMM_OUTPUT_DIR + 'hmm3')
+    for file in files:
+        copyfile(HMM_OUTPUT_DIR + 'hmm3/' + file, HMM_OUTPUT_DIR + 'hmm4/' + file)
+
+    # sp model
+    sp_model = []
+    with open(HMM_OUTPUT_DIR + 'hmm4/hmmdefs','r') as infile:
+        for i, line in enumerate(infile):
+            if("sil" in line):
+                line_sil = i
+
+    with open(HMM_OUTPUT_DIR + 'hmm4/hmmdefs','r') as infile:
+        for i, line in enumerate(infile):
+            if(i >= line_sil and i <= line_sil + 14):
+                sp_model.append(line)
+
+    sp_model = sp_model[:3] + sp_model[9:]
+    sp_model[0] = sp_model[0].replace('sil', 'sp')
+    sp_model[2] = sp_model[2].replace('5','3')
+    sp_model[3] = sp_model[3].replace('3', '2')
+
+    sp_model.append('<TRANSP> 3\n')
+    sp_model.append('0.0 1.0 0.0\n')
+    sp_model.append('0.0 0.9 0.1\n')
+    sp_model.append('0.0 0.0 0.0\n')
+    sp_model.append('<ENDHMM>\n')
+
+    with open(HMM_OUTPUT_DIR + 'hmm4/hmmdefs', 'a+') as fout:
+        for item in sp_model:
+            fout.write(item)
+
 # NOTE: ini cuma run HMM0 - HMM3 karena HMM4 udah pakai monophones1 dan ada konfigurasi sendiri lagi
 def run_hmm(n_epoch):
-    for epoch in range(1, n_epoch + 1):
+    # make all directory for HMM
+    for i in range (10):
+        hmm_dir = HMM_OUTPUT_DIR + 'hmm' + str(i)
+        if not os.path.exists(hmm_dir):
+            os.mkdir(hmm_dir)
+
+    for epoch in range(3):
         # HERest -A -D -T 1 -C {hmm.conf} -I {phones.mlf} -t 250.0 150.0 1000.0 -S {mfcc_list.scp} -H {hmm/macros} -H {hmm/hmmdefs} -M {hmm_result/hmm} {monophones}
         cmd = "HERest -A -D -T 1 -C %s -I %s -t 250.0 150.0 1000.0 -S %s -H hmm_result/hmm%d/macros -H hmm_result/hmm%d/hmmdefs -M hmm_result/hmm%d %s"
-        args = (HMM_CONF_FILE, PHONES_MLF_FILE, MFCC_LIST_FILE, epoch-1, epoch-1, epoch, MONOPHONE0_FILE)
+        args = (HMM_CONF_FILE, PHONES0_MLF_FILE, MFCC_LIST_FILE, epoch, epoch, epoch+1, MONOPHONE0_FILE)
         utils.run(cmd % args)
+
+    prepare_silence_model()
+    for i in range(4, 7):
+        if(i == 4):
+            # HHEd -A -D -T 1 -H hmm4/macros -H hmm4/hmmdefs -M hmm5 sil.hed monophones1
+            cmd = "HHEd -A -D -T 1 -H hmm_result/hmm%d/macros -H hmm_result/hmm%d/hmmdefs -M hmm_result/hmm%d %s %s"
+            args = (i, i, i+1, SILENCE_CONF_FILE, MONOPHONE1_FILE)
+            utils.run(cmd % args)
+        else:
+            # HERest -A -D -T 1 -C config  -I phones1.mlf -t 250.0 150.0 3000.0 -S train.scp -H hmm5/macros -H  hmm5/hmmdefs -M hmm6 monophones1
+            cmd = "HERest -A -D -T 1 -C %s -I %s -t 250.0 150.0 3000.0 -S %s -H hmm_result/hmm%d/macros -H hmm_result/hmm%d/hmmdefs -M hmm_result/hmm%d %s"
+            args = (HMM_CONF_FILE, PHONES1_MLF_FILE, MFCC_LIST_FILE, i, i, i+1, MONOPHONE1_FILE)
+            utils.run(cmd % args)

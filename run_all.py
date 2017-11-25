@@ -7,10 +7,10 @@ if __name__ == '__main__':
     # mlf.create_wlist()
     # mlf.create_htk_dict()
     # mlf.create_mlf_word()
-    # mlf.create_mlf_phone()
+    mlf.create_mlf_phone()
 
     # generate files for hmm0
-    # hmm.prepare_hmm()
+    hmm.prepare_hmm()
 
     # run hmm for n epoch
-    hmm.run_hmm(2)
+    hmm.run_hmm(7)
