@@ -30,3 +30,16 @@ untuk merubah urutan proses yang dilakukan, edit run_all.py sesuai keinginan.
 
 Pastikan bahwa:
 - Dataset berada pada folder ini juga.
+
+## Script to compile DFA grammar
+Untuk bikin grammar bisa liat contohnya di folder grammar.
+Buka file upnormal.grammar dan upnormal.voca
+Harus dicompile ke bentuk upnormal.dict, upnormal.dfa, dan upnormal.term
+Script :
+```
+  perl mkdfa.pl upnormal
+```
+
+Pastikan bahwa:
+- Kalian sudah install Julius 4.3.1 dari http://julius.osdn.jp/en_index.php#latest_version
+- Kalian sudah set PATH ke bin-nya Julius, misalnya C:\Users\ASUS\Desktop\NLP\Tubes Speech\julius-4.3.1-win32bin
