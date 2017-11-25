@@ -118,7 +118,7 @@ def run_hmm(n_epoch):
             args = (HMM_CONF_FILE, PHONES1_MLF_FILE, MFCC_LIST_FILE, i, i, i+1, MONOPHONE1_FILE)
             utils.run(cmd % args)
 
-    #prepare_realigning_data()
+    prepare_realigning_data()
     for i in range(7, 9):
         #HERest -A -D -T 1 -C config -I aligned.mlf -t 250.0 150.0 3000.0 -S train.scp -H hmm7/macros -H hmm7/hmmdefs -M hmm8 monophones1 
         cmd = "HERest -A -D -T 1 -C %s -I %s -t 250.0 150.0 3000.0 -S %s -H hmm_result/hmm%d/macros -H hmm_result/hmm%d/hmmdefs -M hmm_result/hmm%d %s"

@@ -25,3 +25,9 @@ HVITE_LOG = "scripts/log/HVite_log"
 HMM_CONF_FILE = "scripts/files/hmm/hmm.conf"
 HMM_PROTO_FILE = "scripts/files/hmm/proto"
 HMM_OUTPUT_DIR = "hmm_result/"
+
+# TRIPHONE FILE 
+MKTRI_FILE = "scripts/files/triphones/mktri.led"
+TRIPHONE1_FILE = "scripts/files/triphones/triphones1"
+WINTRI_MLF_FILE = "scripts/files/triphones/wintri.mlf"
+MKTRI_HED_FILE = "scripts/files/triphones/mktri.hed"

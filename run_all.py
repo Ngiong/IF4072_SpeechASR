@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-from scripts import prepare_mfcc as mfcc, prepare_mlf as mlf, process_hmm as hmm
+from scripts import prepare_mfcc as mfcc, prepare_mlf as mlf, process_hmm as hmm, process_triphones as triphones
 
 if __name__ == '__main__':
     # mfcc.gen_scp()
@@ -13,4 +13,7 @@ if __name__ == '__main__':
     # hmm.prepare_hmm()
 
     # run hmm for n epoch
-    hmm.run_hmm(7)
+    # hmm.run_hmm(7)
+    
+    # make triphones
+    triphones.execute_triphones()
