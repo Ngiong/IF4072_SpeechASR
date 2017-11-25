@@ -1,0 +1,27 @@
+% NS_B
+<s>        sil
+
+% NS_E
+</s>        sil
+
+% ORDER
+PESAN        p e s a n
+
+% BASE_FOOD
+MI        m i
+NASI        n a s i
+
+% BASE_DRINK
+teh        t E h
+kopi        k o p i
+
+% TOPPING
+MI        m i
+NASI        n a s i
+
+% TYPE
+DINGIN        d i ng i n
+PANAS        p a n a s
+
+% PROCESS
+GORENG        g o r e ng

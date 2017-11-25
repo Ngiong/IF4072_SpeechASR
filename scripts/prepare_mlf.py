@@ -10,8 +10,15 @@ def create_wlist():
 def create_htk_dict():
     # HDMan -m -g {global.ded} -w {wlist} -n {monophones1} -i -l {dlog} {output_dict} {selfmade-dict.txt}
     cmd = "HDMan -m -g %s -w %s -n %s -i -l %s %s %s"
-    args = (GLOBALDED_FILE, WORDLIST_FILE, MONOPHONE_FILE, DLOG_FILE, HTK_DICT_FILE, MY_DICT_FILE)
+    args = (GLOBALDED_FILE, WORDLIST_FILE, MONOPHONE1_FILE, DLOG_FILE, HTK_DICT_FILE, MY_DICT_FILE)
     utils.run(cmd % args)
+
+    fout = open(MONOPHONE0_FILE, 'w')
+    with open(MONOPHONE1_FILE, 'r') as infile:
+        for line in infile:
+            if('sp' not in line):
+                fout.write(line)
+    fout.close()
 
 def create_mlf_word():
     # perl scripts/prompts2mlf {word-level.mlf} prompts.tsv
@@ -20,7 +27,14 @@ def create_mlf_word():
     utils.run(cmd % args)
 
 def create_mlf_phone():
+    # PHONES0.MLF
     # HLEd -A -D -T 1 -l '*' -d {dict} -i {phones.mlf} {mkphones0.led} {word-level.mlf}
-    cmd = "HLEd -A -D -T 1 -l '*' -d %s -i %s %s %s"
-    args = (HTK_DICT_FILE, PHONES_MLF_FILE, MKPHONES_FILE, WORDS_MLF_FILE)
+    cmd = "HLEd -A -D -T 1 -l * -d %s -i %s %s %s"
+    args = (HTK_DICT_FILE, PHONES0_MLF_FILE, MKPHONES0_FILE, WORDS_MLF_FILE)
+    utils.run(cmd % args)
+    
+    # PHONES1.MLF
+    # HLEd -A -D -T 1 -l * -d dict -i phones1.mlf mkphones1.led words.mlf
+    cmd = "HLEd -A -D -T 1 -l * -d %s -i %s %s %s"
+    args = (HTK_DICT_FILE, PHONES1_MLF_FILE, MKPHONES1_FILE, WORDS_MLF_FILE)
     utils.run(cmd % args)
