@@ -1,0 +1,21 @@
+WARNING: m_chkparam: "-penalty1" only for grammar, ignored
+WARNING: m_chkparam: "-penalty2" only for grammar, ignored
+STAT: jconf successfully finalized
+STAT: *** loading AM00 _default
+Stat: init_phmm: Reading in HMM definition
+Stat: rdhmmdef: ascii format HMM definition
+Stat: rdhmmdef: limit check passed
+Stat: check_hmm_restriction: an HMM with several arcs from initial state found: "sp"
+Stat: rdhmmdef: this HMM requires multipath handling at decoding
+Stat: rdhmmdef: no <SID> embedded
+Stat: rdhmmdef: assign SID by the order of appearance
+Stat: init_phmm: defined HMMs:    35
+Stat: init_phmm: logical names:    35
+Stat: init_phmm: base phones:    35 used in logical
+Stat: init_phmm: finished reading HMM definitions
+STAT: m_fusion: force multipath HMM handling by user request
+STAT: *** AM00 _default loaded
+STAT: *** loading LM00 _default
+Stat: init_voca: read 7245 words
+ERROR: m_fusion: head sil word "<s>" not exist in voca
+ERROR: m_fusion: failed to initialize dictionary
