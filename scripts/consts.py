@@ -39,3 +39,7 @@ FULLLIST_FILE = "fulllist"
 DICT_TRI_FILE = "scripts/files/triphones/dict-tri"
 
 TREE_HED_FILE = "scripts/files/triphones/tree.hed"
+
+# WORDNET
+WORDNET_LM_FILE = "scripts\files\wordnet\wnet_lm.w"
+WORDNET_NO_LM_FILE = "scripts\files\wordnet\wnet.w"
