@@ -86,7 +86,12 @@ def prepare_silence_model():
         for item in sp_model:
             fout.write(item)
 
-# NOTE: ini cuma run HMM0 - HMM3 karena HMM4 udah pakai monophones1 dan ada konfigurasi sendiri lagi
+def prepare_realigning_data():
+    # HVite -A -D -T 1 -l * -o SWT -b SENT-END -C config -H hmm7/macros -H hmm7/hmmdefs -i aligned.mlf -m -t 250.0 150.0 1000.0 -y lab -a -I words.mlf -S train.scp dict monophones1> HVite_log
+    cmd = "HVite -A -D -T 1 -l * -o SWT -b SENT-END -C %s -H hmm_result/hmm7/macros -H hmm_result/hmm7/hmmdefs -i %s -m -t 250.0 150.0 1000.0 -y lab -a -I %s -S %s %s %s> %s"
+    args = (HMM_CONF_FILE, ALIGNED_MLF_FILE, WORDS_MLF_FILE, MFCC_LIST_FILE, HTK_DICT_FILE, MONOPHONE1_FILE, HVITE_LOG)
+    utils.run(cmd % args)
+
 def run_hmm(n_epoch):
     # make all directory for HMM
     for i in range (10):
@@ -112,3 +117,10 @@ def run_hmm(n_epoch):
             cmd = "HERest -A -D -T 1 -C %s -I %s -t 250.0 150.0 3000.0 -S %s -H hmm_result/hmm%d/macros -H hmm_result/hmm%d/hmmdefs -M hmm_result/hmm%d %s"
             args = (HMM_CONF_FILE, PHONES1_MLF_FILE, MFCC_LIST_FILE, i, i, i+1, MONOPHONE1_FILE)
             utils.run(cmd % args)
+
+    prepare_realigning_data()
+    for i in range(7, 9):
+        #HERest -A -D -T 1 -C config -I aligned.mlf -t 250.0 150.0 3000.0 -S train.scp -H hmm7/macros -H hmm7/hmmdefs -M hmm8 monophones1 
+        cmd = "HERest -A -D -T 1 -C %s -I %s -t 250.0 150.0 3000.0 -S %s -H hmm_result/hmm%d/macros -H hmm_result/hmm%d/hmmdefs -M hmm_result/hmm%d %s"
+        args = (HMM_CONF_FILE, ALIGNED_MLF_FILE, MFCC_LIST_FILE, i, i, i+1, MONOPHONE1_FILE)
+        utils.run(cmd % args)

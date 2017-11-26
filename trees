@@ -1,0 +1,564 @@
+QS 'R_NonBoundary' { "*+*" }
+QS 'L_NonBoundary' { "*-*" }
+
+A[2]
+{
+   0          'L_NonBoundary'  "ST_A_2_1"      -1    
+  -1          'R_NonBoundary'  "ST_A_2_2"  "ST_A_2_3" 
+}
+
+B[2]
+{
+   0          'L_NonBoundary'  "ST_B_2_1"      -1    
+  -1          'R_NonBoundary'  "ST_B_2_2"  "ST_B_2_3" 
+}
+
+D[2]
+{
+   0          'L_NonBoundary'  "ST_D_2_1"      -1    
+  -1          'R_NonBoundary'  "ST_D_2_2"  "ST_D_2_3" 
+}
+
+I[2]
+{
+   0          'L_NonBoundary'  "ST_I_2_1"      -1    
+  -1          'R_NonBoundary'  "ST_I_2_2"  "ST_I_2_3" 
+}
+
+AI[2]
+{
+   0          'L_NonBoundary'  "ST_AI_2_1"      -1    
+  -1          'R_NonBoundary'  "ST_AI_2_2"  "ST_AI_2_3" 
+}
+
+K[2]
+{
+   0          'L_NonBoundary'  "ST_K_2_1"      -1    
+  -1          'R_NonBoundary'  "ST_K_2_2"  "ST_K_2_3" 
+}
+
+N[2]
+{
+   0          'R_NonBoundary'  "ST_N_2_1"      -1    
+  -1          'L_NonBoundary'  "ST_N_2_2"  "ST_N_2_3" 
+}
+
+NG[2]
+{
+   0          'L_NonBoundary'  "ST_NG_2_1"      -1    
+  -1          'R_NonBoundary'  "ST_NG_2_2"  "ST_NG_2_3" 
+}
+
+Y[2]
+{
+   0          'L_NonBoundary'  "ST_Y_2_1"      -1    
+  -1          'R_NonBoundary'  "ST_Y_2_2"  "ST_Y_2_3" 
+}
+
+S[2]
+{
+   0          'L_NonBoundary'  "ST_S_2_1"      -1    
+  -1          'R_NonBoundary'  "ST_S_2_2"  "ST_S_2_3" 
+}
+
+E[2]
+{
+   0          'L_NonBoundary'  "ST_E_2_1"      -1    
+  -1          'R_NonBoundary'  "ST_E_2_2"  "ST_E_2_3" 
+}
+
+L[2]
+{
+   0          'L_NonBoundary'  "ST_L_2_1"      -1    
+  -1          'R_NonBoundary'  "ST_L_2_2"  "ST_L_2_3" 
+}
+
+U[2]
+{
+   0          'L_NonBoundary'  "ST_U_2_1"      -1    
+  -1          'R_NonBoundary'  "ST_U_2_2"  "ST_U_2_3" 
+}
+
+H[2]
+{
+   0          'R_NonBoundary'  "ST_H_2_1"      -1    
+  -1          'L_NonBoundary'  "ST_H_2_2"  "ST_H_2_3" 
+}
+
+R[2]
+{
+   0          'L_NonBoundary'  "ST_R_2_1"      -1    
+  -1          'R_NonBoundary'  "ST_R_2_2"  "ST_R_2_3" 
+}
+
+M[2]
+{
+   0          'L_NonBoundary'  "ST_M_2_1"      -1    
+  -1          'R_NonBoundary'  "ST_M_2_2"  "ST_M_2_3" 
+}
+
+P[2]
+{
+   0          'L_NonBoundary'  "ST_P_2_1"      -1    
+  -1          'R_NonBoundary'  "ST_P_2_2"  "ST_P_2_3" 
+}
+
+e[2]
+{
+   0          'L_NonBoundary'  "ST_e_2_1"      -1    
+  -1          'R_NonBoundary'  "ST_e_2_2"  "ST_e_2_3" 
+}
+
+O[2]
+{
+   0          'L_NonBoundary'  "ST_O_2_1"      -1    
+  -1          'R_NonBoundary'  "ST_O_2_2"  "ST_O_2_3" 
+}
+
+G[2]
+{
+   0          'L_NonBoundary'  "ST_G_2_1"      -1    
+  -1          'R_NonBoundary'  "ST_G_2_2"  "ST_G_2_3" 
+}
+
+NY[2]
+{
+   0          'L_NonBoundary'  "ST_NY_2_1"      -1    
+  -1          'R_NonBoundary'  "ST_NY_2_2"  "ST_NY_2_3" 
+}
+
+T[2]
+{
+   0          'L_NonBoundary'  "ST_T_2_1"      -1    
+  -1          'R_NonBoundary'  "ST_T_2_2"  "ST_T_2_3" 
+}
+
+Z[2]
+{
+   0          'L_NonBoundary'  "ST_Z_2_1"      -1    
+  -1          'R_NonBoundary'  "ST_Z_2_2"  "ST_Z_2_3" 
+}
+
+C[2]
+{
+   0          'L_NonBoundary'  "ST_C_2_1"  "ST_C_2_2" 
+}
+
+W[2]
+{
+   0          'L_NonBoundary'  "ST_W_2_1"      -1    
+  -1          'R_NonBoundary'  "ST_W_2_2"  "ST_W_2_3" 
+}
+
+J[2]
+{
+   0          'L_NonBoundary'  "ST_J_2_1"  "ST_J_2_2" 
+}
+
+V[2]
+{
+   0          'L_NonBoundary'  "ST_V_2_1"      -1    
+  -1          'R_NonBoundary'  "ST_V_2_2"  "ST_V_2_3" 
+}
+
+F[2]
+{
+   0          'L_NonBoundary'  "ST_F_2_1"      -1    
+  -1          'R_NonBoundary'  "ST_F_2_2"  "ST_F_2_3" 
+}
+
+Q[2]
+   "ST_Q_2_1"
+
+SY[2]
+{
+   0          'L_NonBoundary'  "ST_SY_2_1"  "ST_SY_2_2" 
+}
+
+X[2]
+   "ST_X_2_1"
+
+AU[2]
+{
+   0          'L_NonBoundary'  "ST_AU_2_1"  "ST_AU_2_2" 
+}
+
+OI[2]
+   "ST_OI_2_1"
+
+sil[2]
+   "ST_sil_2_1"
+
+A[3]
+{
+   0          'L_NonBoundary'  "ST_A_3_1"      -1    
+  -1          'R_NonBoundary'  "ST_A_3_2"  "ST_A_3_3" 
+}
+
+B[3]
+{
+   0          'R_NonBoundary'  "ST_B_3_1"      -1    
+  -1          'L_NonBoundary'  "ST_B_3_2"  "ST_B_3_3" 
+}
+
+D[3]
+{
+   0          'R_NonBoundary'  "ST_D_3_1"      -1    
+  -1          'L_NonBoundary'  "ST_D_3_2"  "ST_D_3_3" 
+}
+
+I[3]
+{
+   0          'R_NonBoundary'  "ST_I_3_1"      -1    
+  -1          'L_NonBoundary'  "ST_I_3_2"  "ST_I_3_3" 
+}
+
+AI[3]
+{
+   0          'R_NonBoundary'  "ST_AI_3_1"  "ST_AI_3_2" 
+}
+
+K[3]
+{
+   0          'R_NonBoundary'  "ST_K_3_1"      -1    
+  -1          'L_NonBoundary'  "ST_K_3_2"  "ST_K_3_3" 
+}
+
+N[3]
+{
+   0          'R_NonBoundary'  "ST_N_3_1"      -1    
+  -1          'L_NonBoundary'  "ST_N_3_2"  "ST_N_3_3" 
+}
+
+NG[3]
+{
+   0          'R_NonBoundary'  "ST_NG_3_1"      -1    
+  -1          'L_NonBoundary'  "ST_NG_3_2"  "ST_NG_3_3" 
+}
+
+Y[3]
+{
+   0          'L_NonBoundary'  "ST_Y_3_1"      -1    
+  -1          'R_NonBoundary'  "ST_Y_3_2"  "ST_Y_3_3" 
+}
+
+S[3]
+{
+   0          'L_NonBoundary'  "ST_S_3_1"      -1    
+  -1          'R_NonBoundary'  "ST_S_3_2"  "ST_S_3_3" 
+}
+
+E[3]
+{
+   0          'R_NonBoundary'  "ST_E_3_1"      -1    
+  -1          'L_NonBoundary'  "ST_E_3_2"  "ST_E_3_3" 
+}
+
+L[3]
+{
+   0          'R_NonBoundary'  "ST_L_3_1"      -1    
+  -1          'L_NonBoundary'  "ST_L_3_2"  "ST_L_3_3" 
+}
+
+U[3]
+{
+   0          'R_NonBoundary'  "ST_U_3_1"      -1    
+  -1          'L_NonBoundary'  "ST_U_3_2"  "ST_U_3_3" 
+}
+
+H[3]
+{
+   0          'L_NonBoundary'  "ST_H_3_1"      -1    
+  -1          'R_NonBoundary'  "ST_H_3_2"  "ST_H_3_3" 
+}
+
+R[3]
+{
+   0          'R_NonBoundary'  "ST_R_3_1"      -1    
+  -1          'L_NonBoundary'  "ST_R_3_2"  "ST_R_3_3" 
+}
+
+M[3]
+{
+   0          'L_NonBoundary'  "ST_M_3_1"      -1    
+  -1          'R_NonBoundary'  "ST_M_3_2"  "ST_M_3_3" 
+}
+
+P[3]
+{
+   0          'R_NonBoundary'  "ST_P_3_1"      -1    
+  -1          'L_NonBoundary'  "ST_P_3_2"  "ST_P_3_3" 
+}
+
+e[3]
+{
+   0          'L_NonBoundary'  "ST_e_3_1"      -1    
+  -1          'R_NonBoundary'  "ST_e_3_2"  "ST_e_3_3" 
+}
+
+O[3]
+{
+   0          'R_NonBoundary'  "ST_O_3_1"      -1    
+  -1          'L_NonBoundary'  "ST_O_3_2"  "ST_O_3_3" 
+}
+
+G[3]
+{
+   0          'R_NonBoundary'  "ST_G_3_1"      -1    
+  -1          'L_NonBoundary'  "ST_G_3_2"  "ST_G_3_3" 
+}
+
+NY[3]
+{
+   0          'L_NonBoundary'  "ST_NY_3_1"  "ST_NY_3_2" 
+}
+
+T[3]
+{
+   0          'R_NonBoundary'  "ST_T_3_1"      -1    
+  -1          'L_NonBoundary'  "ST_T_3_2"  "ST_T_3_3" 
+}
+
+Z[3]
+{
+   0          'R_NonBoundary'  "ST_Z_3_1"      -1    
+  -1          'L_NonBoundary'  "ST_Z_3_2"  "ST_Z_3_3" 
+}
+
+C[3]
+{
+   0          'L_NonBoundary'  "ST_C_3_1"  "ST_C_3_2" 
+}
+
+W[3]
+{
+   0          'L_NonBoundary'  "ST_W_3_1"      -1    
+  -1          'R_NonBoundary'  "ST_W_3_2"  "ST_W_3_3" 
+}
+
+J[3]
+{
+   0          'R_NonBoundary'  "ST_J_3_1"      -1    
+  -1          'L_NonBoundary'  "ST_J_3_2"  "ST_J_3_3" 
+}
+
+V[3]
+{
+   0          'L_NonBoundary'  "ST_V_3_1"  "ST_V_3_2" 
+}
+
+F[3]
+{
+   0          'R_NonBoundary'  "ST_F_3_1"      -1    
+  -1          'L_NonBoundary'  "ST_F_3_2"  "ST_F_3_3" 
+}
+
+Q[3]
+   "ST_Q_3_1"
+
+SY[3]
+{
+   0          'L_NonBoundary'  "ST_SY_3_1"  "ST_SY_3_2" 
+}
+
+X[3]
+   "ST_X_3_1"
+
+AU[3]
+{
+   0          'R_NonBoundary'  "ST_AU_3_1"      -1    
+  -1          'L_NonBoundary'  "ST_AU_3_2"  "ST_AU_3_3" 
+}
+
+OI[3]
+   "ST_OI_3_1"
+
+sil[3]
+   "ST_sil_3_1"
+
+A[4]
+{
+   0          'R_NonBoundary'  "ST_A_4_1"      -1    
+  -1          'L_NonBoundary'  "ST_A_4_2"  "ST_A_4_3" 
+}
+
+B[4]
+{
+   0          'R_NonBoundary'  "ST_B_4_1"      -1    
+  -1          'L_NonBoundary'  "ST_B_4_2"  "ST_B_4_3" 
+}
+
+D[4]
+{
+   0          'R_NonBoundary'  "ST_D_4_1"      -1    
+  -1          'L_NonBoundary'  "ST_D_4_2"  "ST_D_4_3" 
+}
+
+I[4]
+{
+   0          'R_NonBoundary'  "ST_I_4_1"      -1    
+  -1          'L_NonBoundary'  "ST_I_4_2"  "ST_I_4_3" 
+}
+
+AI[4]
+{
+   0          'R_NonBoundary'  "ST_AI_4_1"  "ST_AI_4_2" 
+}
+
+K[4]
+{
+   0          'R_NonBoundary'  "ST_K_4_1"      -1    
+  -1          'L_NonBoundary'  "ST_K_4_2"  "ST_K_4_3" 
+}
+
+N[4]
+{
+   0          'R_NonBoundary'  "ST_N_4_1"      -1    
+  -1          'L_NonBoundary'  "ST_N_4_2"  "ST_N_4_3" 
+}
+
+NG[4]
+{
+   0          'R_NonBoundary'  "ST_NG_4_1"      -1    
+  -1          'L_NonBoundary'  "ST_NG_4_2"  "ST_NG_4_3" 
+}
+
+Y[4]
+{
+   0          'R_NonBoundary'  "ST_Y_4_1"      -1    
+  -1          'L_NonBoundary'  "ST_Y_4_2"  "ST_Y_4_3" 
+}
+
+S[4]
+{
+   0          'R_NonBoundary'  "ST_S_4_1"      -1    
+  -1          'L_NonBoundary'  "ST_S_4_2"  "ST_S_4_3" 
+}
+
+E[4]
+{
+   0          'R_NonBoundary'  "ST_E_4_1"      -1    
+  -1          'L_NonBoundary'  "ST_E_4_2"  "ST_E_4_3" 
+}
+
+L[4]
+{
+   0          'R_NonBoundary'  "ST_L_4_1"      -1    
+  -1          'L_NonBoundary'  "ST_L_4_2"  "ST_L_4_3" 
+}
+
+U[4]
+{
+   0          'R_NonBoundary'  "ST_U_4_1"      -1    
+  -1          'L_NonBoundary'  "ST_U_4_2"  "ST_U_4_3" 
+}
+
+H[4]
+{
+   0          'R_NonBoundary'  "ST_H_4_1"      -1    
+  -1          'L_NonBoundary'  "ST_H_4_2"  "ST_H_4_3" 
+}
+
+R[4]
+{
+   0          'R_NonBoundary'  "ST_R_4_1"      -1    
+  -1          'L_NonBoundary'  "ST_R_4_2"  "ST_R_4_3" 
+}
+
+M[4]
+{
+   0          'R_NonBoundary'  "ST_M_4_1"      -1    
+  -1          'L_NonBoundary'  "ST_M_4_2"  "ST_M_4_3" 
+}
+
+P[4]
+{
+   0          'R_NonBoundary'  "ST_P_4_1"      -1    
+  -1          'L_NonBoundary'  "ST_P_4_2"  "ST_P_4_3" 
+}
+
+e[4]
+{
+   0          'R_NonBoundary'  "ST_e_4_1"      -1    
+  -1          'L_NonBoundary'  "ST_e_4_2"  "ST_e_4_3" 
+}
+
+O[4]
+{
+   0          'R_NonBoundary'  "ST_O_4_1"      -1    
+  -1          'L_NonBoundary'  "ST_O_4_2"  "ST_O_4_3" 
+}
+
+G[4]
+{
+   0          'R_NonBoundary'  "ST_G_4_1"      -1    
+  -1          'L_NonBoundary'  "ST_G_4_2"  "ST_G_4_3" 
+}
+
+NY[4]
+{
+   0          'L_NonBoundary'  "ST_NY_4_1"  "ST_NY_4_2" 
+}
+
+T[4]
+{
+   0          'R_NonBoundary'  "ST_T_4_1"      -1    
+  -1          'L_NonBoundary'  "ST_T_4_2"  "ST_T_4_3" 
+}
+
+Z[4]
+{
+   0          'R_NonBoundary'  "ST_Z_4_1"      -1    
+  -1          'L_NonBoundary'  "ST_Z_4_2"  "ST_Z_4_3" 
+}
+
+C[4]
+{
+   0          'L_NonBoundary'  "ST_C_4_1"  "ST_C_4_2" 
+}
+
+W[4]
+{
+   0          'L_NonBoundary'  "ST_W_4_1"  "ST_W_4_2" 
+}
+
+J[4]
+{
+   0          'R_NonBoundary'  "ST_J_4_1"      -1    
+  -1          'L_NonBoundary'  "ST_J_4_2"  "ST_J_4_3" 
+}
+
+V[4]
+{
+   0          'R_NonBoundary'  "ST_V_4_1"  "ST_V_4_2" 
+}
+
+F[4]
+{
+   0          'R_NonBoundary'  "ST_F_4_1"      -1    
+  -1          'L_NonBoundary'  "ST_F_4_2"  "ST_F_4_3" 
+}
+
+Q[4]
+{
+   0          'R_NonBoundary'  "ST_Q_4_1"  "ST_Q_4_2" 
+}
+
+SY[4]
+   "ST_SY_4_1"
+
+X[4]
+   "ST_X_4_1"
+
+AU[4]
+{
+   0          'R_NonBoundary'  "ST_AU_4_1"      -1    
+  -1          'L_NonBoundary'  "ST_AU_4_2"  "ST_AU_4_3" 
+}
+
+OI[4]
+   "ST_OI_4_1"
+
+sil[4]
+   "ST_sil_4_1"
+
