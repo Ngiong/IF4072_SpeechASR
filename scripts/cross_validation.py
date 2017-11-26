@@ -34,9 +34,20 @@ def generate_transcript():
         if not os.path.exists(prompt_dir):
             os.mkdir(prompt_dir)
         pprint(file_list[directory]);
-        with open(prompt_dir + '/prompts.tsv', 'w') as fout, open(prompt_dir + '/answer.tsv', 'w') as answer_out:
-            for k in sorted(transcript.keys()):
-                if k[2:] + '.mfc' not in file_list[directory]:
-                    fout.write(k + ' ' + transcript[k])
-                else:
-                    answer_out.write(k + ' ' + transcript[k])
+        # with open(prompt_dir + '/prompts.tsv', 'w') as fout, open(prompt_dir + '/answer.tsv', 'w') as answer_out:
+        #     for k in sorted(transcript.keys()):
+        #         if k[2:] + '.mfc' not in file_list[directory]:
+        #             fout.write(k + ' ' + transcript[k])
+        #         else:
+        #             answer_out.write(k + ' ' + transcript[k])
+        with open(MFCC_LIST_FILE, 'r') as fin:
+            mfc_list = fin.readlines()
+        gen_scp(file_list, directory, sorted(mfc_list))
+
+def gen_scp(file_list, directory, data):
+    scp_file = 'cross_validation/test_' + directory + '/mfcc_list.scp'
+    with open(scp_file, 'w') as fout:
+        for mfc in data:
+            if (mfc[26:len(mfc)-1] in file_list[directory]):
+                print("'"+mfc[26:len(mfc)-1]+"'")
+                fout.write(mfc)
