@@ -7,7 +7,21 @@ def create_wlist():
     args = (PROMPTS_FILE, WORDLIST_FILE)
     utils.run(cmd % args)
 
+def add_SENT_END():
+    original = open(WORDLIST_FILE, 'r').readlines()
+    idx = next(id for id, val in enumerate(original) if 'SENSORNYA' in val) + 1
+    print (idx)
+    original.insert(idx, "SENT-START\n")
+    original.insert(idx, "SENT-END\n")
+
+    with open(WORDLIST_FILE, 'w') as fout:
+        for elmnt in original:
+            fout.write(elmnt)
+
 def create_htk_dict():
+    #tambahin sent-end disini
+    add_SENT_END()
+
     # HDMan -m -g {global.ded} -w {wlist} -n {monophones1} -i -l {dlog} {output_dict} {selfmade-dict.txt}
     cmd = "HDMan -m -g %s -w %s -n %s -i -l %s %s %s"
     args = (GLOBALDED_FILE, WORDLIST_FILE, MONOPHONE1_FILE, DLOG_FILE, HTK_DICT_FILE, MY_DICT_FILE)
@@ -32,12 +46,13 @@ def create_mlf_phone():
     cmd = "HLEd -A -D -T 1 -l '*' -d %s -i %s %s %s"
     args = (HTK_DICT_FILE, PHONES0_MLF_FILE, MKPHONES0_FILE, WORDS_MLF_FILE)
     utils.run(cmd % args)
-    
+
     # PHONES1.MLF
     # HLEd -A -D -T 1 -l * -d dict -i phones1.mlf mkphones1.led words.mlf
     cmd = "HLEd -A -D -T 1 -l '*' -d %s -i %s %s %s"
     args = (HTK_DICT_FILE, PHONES1_MLF_FILE, MKPHONES1_FILE, WORDS_MLF_FILE)
     utils.run(cmd % args)
-    
-    with open(MONOPHONE1_FILE, 'a') as fout:
-        fout.write('sil')
+
+    if 'sil' not in open(MONOPHONE1_FILE).read():
+        with open(MONOPHONE1_FILE, 'a') as fout:
+            fout.write('sil\n')
