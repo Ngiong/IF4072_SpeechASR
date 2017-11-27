@@ -104,4 +104,4 @@ def execute_triphones():
 	#train_hmm10_hmm12()
 	create_fulllist()
 	create_treeHED()
-	train_hmm13_hmm15()
+	#train_hmm13_hmm15()
