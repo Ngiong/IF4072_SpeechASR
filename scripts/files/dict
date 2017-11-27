@@ -1,5 +1,3 @@
-<s>             []              sil
-</s>            []              sil
 A               [A]             A sp
 ABAD            [ABAD]          A B A D sp
 ABADI           [ABADI]         A B A D I sp
@@ -65,6 +63,7 @@ AFAN            [AFAN]          A F A N sp
 AFGAN           [AFGAN]         A F G A N sp
 AFGANISTAN      [AFGANISTAN]    A F G A N I S T A N sp
 AFI             [AFI]           A F I sp
+AFRIKA          [AFRIKA]        A F R I K A sp
 AFSEL           [AFSEL]         A F S e L sp
 AFWAMITHARIQ    [AFWAMITHARIQ]  A F W A M I T H O R I Q sp
 AGAK            [AGAK]          A G A K sp
@@ -81,7 +80,6 @@ AGUSTINUS       [AGUSTINUS]     A G U S T I N U S sp
 AGUSTUS         [AGUSTUS]       A G U S T U S sp
 AGWUNOBI        [AGWUNOBI]      A G W U N O B I sp
 AH              [AH]            A H sp
-AHAD            [AHAD]          A H A D sp
 AHIROTI         [AHIROTI]       A K H I R O T I sp
 AHLI            [AHLI]          A H L I sp
 AHMAD           [AHMAD]         A H M A D sp
@@ -512,6 +510,7 @@ BATARA          [BATARA]        B A T A R A sp
 BATAS           [BATAS]         B A T A S sp
 BATASI          [BATASI]        B A T A S I sp
 BATU            [BATU]          B A T U sp
+BATUBARA        [BATUBARA]      B A T U B A R A sp
 BAU             [BAU]           B A U sp
 BAWA            [BAWA]          B A W A sp
 BAWAH           [BAWAH]         B A W A H sp
@@ -697,6 +696,7 @@ BERKEMAJUAN     [BERKEMAJUAN]   B e R K e M A J U A N sp
 BERKEPANJANGAN  [BERKEPANJANGAN] B e R K e P A N J A NG A N sp
 BERKERIPUT      [BERKERIPUT]    B e R K e R I P U T sp
 BERKHIANAT      [BERKHIANAT]    B e R K H I A N A T sp
+BERKOALISI      [BERKOALISI]    B e R K O A L I S I sp
 BERKOMENTAR     [BERKOMENTAR]   B e R K O M E N T A R sp
 BERKOMUNIKASI   [BERKOMUNIKASI] B e R K O M U N I K A S I sp
 BERKONSOLIDASI  [BERKONSOLIDASI] B e R K O N S O L I D A S I sp
@@ -831,7 +831,6 @@ BILANGAN        [BILANGAN]      B I L A NG A N sp
 BILATERAL       [BILATERAL]     B I L A T e R A L sp
 BILBINA         [BILBINA]       B I L B I N A sp
 BILLING         [BILLING]       B I L L I NG sp
-BILYET          [BILYET]        B I L Y E T sp
 BIMANTORO       [BIMANTORO]     B I M A N T O R O sp
 BIMBINGAN       [BIMBINGAN]     B I M B I NG A N sp
 BIMBINGLAH      [BIMBINGLAH]    B I M B I NG L A H sp
@@ -854,7 +853,6 @@ BISAKAH         [BISAKAH]       B I S A K A H sp
 BISING          [BISING]        B I S I NG sp
 BISMILLAHIRAHMANIRRAHIM [BISMILLAHIRAHMANIRRAHIM] B I S M I L L A H I R O H M A N I R R O H I M sp
 BISNIS          [BISNIS]        B I S N I S sp
-BISNISNYA       [BISNISNYA]     B I S N I S NY A sp
 BISRI           [BISRI]         B I S R I sp
 BITAQWALLAHI    [BITAQWALLAHI]  B I T A Q W A L L A H I sp
 BIUS            [BIUS]          B I U S sp
@@ -900,6 +898,7 @@ BP              [BP]            B E P E sp
 BPJS            [BPJS]          B E P E J E E S sp
 BPK             [BPK]           B E P E K A sp
 BPOM            [BPOM]          B E P O M sp
+BRAILE          [BRAILE]        B R A I L e sp
 BRANKAS         [BRANKAS]       B R A N K A S sp
 BRANTAS         [BRANTAS]       B R A N T A S sp
 BRASIL          [BRASIL]        B R A S I L sp
@@ -1278,6 +1277,7 @@ DIANGGAP        [DIANGGAP]      D I A NG G A P sp
 DIANGKAT        [DIANGKAT]      D I A NG K A T sp
 DIANTARA        [DIANTARA]      D I A N T A R A sp
 DIANTARANYA     [DIANTARANYA]   D I A N T A R A NY A sp
+DIANTARKAN      [DIANTARKAN]    D I A N T A R K A N sp
 DIANTISIPASI    [DIANTISIPASI]  D I A N T I S I P A S I sp
 DIARAHKAN       [DIARAHKAN]     D I A R A H K A N sp
 DIARTIKAN       [DIARTIKAN]     D I A R T I K A N sp
@@ -1458,6 +1458,7 @@ DINIKMATI       [DINIKMATI]     D I N I K M A T I sp
 DINILAI         [DINILAI]       D I N I L AI sp
 DINILAINYA      [DINILAINYA]    D I N I L AI NY A sp
 DINYATAKAN      [DINYATAKAN]    D I NY A T A K A N sp
+DIPAGARI        [DIPAGARI]      D I P A G A R I sp
 DIPAJANG        [DIPAJANG]      D I P A J A NG sp
 DIPAKAI         [DIPAKAI]       D I P A K AI sp
 DIPAKSA         [DIPAKSA]       D I P A K S A sp
@@ -1624,6 +1625,7 @@ DIVISI          [DIVISI]        D I V I S I sp
 DIWAKILI        [DIWAKILI]      D I W A K I L I sp
 DIWAKILKAN      [DIWAKILKAN]    D I W A K I L K A N sp
 DIY             [DIY]           D E I Y E sp
+DIYAKINI        [DIYAKINI]      D I Y A K I N I sp
 DJAELANI        [DJAELANI]      J A E L A N I sp
 DJAKFAR         [DJAKFAR]       D J A K F A R sp
 DJALI           [DJALI]         J A L I sp
@@ -1788,6 +1790,7 @@ ENTOY           [ENTOY]         e N T O Y sp
 EPILEPSI        [EPILEPSI]      E P I L E P S I sp
 EPISENTRUM      [EPISENTRUM]    E P I S E N T R U M sp
 EPISODE         [EPISODE]       E P I S O D e sp
+EQUATOR         [EQUATOR]       E K U A T O R sp
 ERA             [ERA]           E R A sp
 ERAT            [ERAT]          e R A T sp
 ERIC            [ERIC]          E R I K sp
@@ -2019,6 +2022,7 @@ GERIMIS         [GERIMIS]       G e R I M I S sp
 GERINDRA        [GERINDRA]      G e R I N D R A sp
 GERMANWINGS     [GERMANWINGS]   J E R M A N W I NG S sp
 GEROMBOLAN      [GEROMBOLAN]    G e R O M B O L A N sp
+GHANA           [GHANA]         G H A N A sp
 GHAZALI         [GHAZALI]       G H A Z A L I sp
 GHOZALI         [GHOZALI]       G O Z A L I sp
 GHOZI           [GHOZI]         G H O Z I sp
@@ -2038,7 +2042,6 @@ GITAR           [GITAR]         G I T A R sp
 GITU            [GITU]          G I T U sp
 GIULIANI        [GIULIANI]      G I U L I A N I sp
 GIZI            [GIZI]          G I Z I sp
-GIZINYA         [GIZINYA]       G I Z I NY A sp
 GLADI           [GLADI]         G L A D I sp
 GLENN           [GLENN]         G L E N N sp
 GLENYENGAN      [GLENYENGAN]    G L e NY e NG A N sp
@@ -2550,6 +2553,7 @@ JEBLOK          [JEBLOK]        J e B L O K sp
 JEDA            [JEDA]          J e D A sp
 JEDDAH          [JEDDAH]        J e D D A H sp
 JEFFRY          [JEFFRY]        J e F F R I sp
+JEFRI           [JEFRI]         J e F R I sp
 JEGAL           [JEGAL]         J e G A L sp
 JEHALIM         [JEHALIM]       J e H A L I M sp
 JEJAK           [JEJAK]         J e J A K sp
@@ -2774,6 +2778,7 @@ KAUM            [KAUM]          K A U M sp
 KAUS            [KAUS]          K A U S sp
 KAWAN           [KAWAN]         K A W A N sp
 KAWASAN         [KAWASAN]       K A W A S A N sp
+KAWAT           [KAWAT]         K A W A T sp
 KAWULA          [KAWULA]        K A W U L A sp
 KAYA            [KAYA]          K A Y A sp
 KAYAK           [KAYAK]         K A Y A K sp
@@ -2837,6 +2842,7 @@ KEHUTANAN       [KEHUTANAN]     K e H U T A N A N sp
 KEIKHLASAN      [KEIKHLASAN]    K e I K H L A S A N sp
 KEINGINAN       [KEINGINAN]     K e I NG I N A N sp
 KEJADIAN        [KEJADIAN]      K e J A D I A N sp
+KEJAGUNG        [KEJAGUNG]      K e J A G U NG sp
 KEJAHATAN       [KEJAHATAN]     K e J A H A T A N sp
 KEJAKSAAN       [KEJAKSAAN]     K e J A K S A A N sp
 KEJAYAAN        [KEJAYAAN]      K e J A Y A A N sp
@@ -2987,6 +2993,7 @@ KETAHUAN        [KETAHUAN]      K e T A H U A N sp
 KETAKUTAN       [KETAKUTAN]     K e T A K U T A N sp
 KETANGKEP       [KETANGKEP]     K e T A NG K e P sp
 KETAPANG-GILIMANUK [KETAPANG-GILIMANUK] K e T A P A NG G I L I M A N U K sp
+KETAT           [KETAT]         K e T A T sp
 KETATANEGARAAN  [KETATANEGARAAN] K e T A T A N e G A R A A N sp
 KETEKUNAN       [KETEKUNAN]     K e T e K U N A N sp
 KETEMU          [KETEMU]        K e T e M U sp
@@ -3080,6 +3087,7 @@ KLUB            [KLUB]          K L U B sp
 KLUB-KLUB       [KLUB-KLUB]     K L U B K L U B sp
 KLUBNYA         [KLUBNYA]       K L U B NY A sp
 KM              [KM]            K A E M sp
+KMP             [KMP]           K A E M P E sp
 KNALPOT         [KNALPOT]       K N A L P O T sp
 KO              [KO]            K A O sp
 KOALISI         [KOALISI]       K O A L I S I sp
@@ -3152,7 +3160,6 @@ KONSTITUSIONAL  [KONSTITUSIONAL] K O N S T I T U S I Y O N A L sp
 KONSUL          [KONSUL]        K O N S U L sp
 KONSULTASI      [KONSULTASI]    K O N S U L T A S I sp
 KONSUMEN        [KONSUMEN]      K O N S U M E N sp
-KONSUMSI        [KONSUMSI]      K O N S U M S I sp
 KONTAINERNYA    [KONTAINERNYA]  K O N T AI N e R NY A sp
 KONTEKS         [KONTEKS]       K O N T E K S sp
 KONTEKSNYA      [KONTEKSNYA]    K O N T E K S NY A sp
@@ -3239,6 +3246,7 @@ KUOTANYA        [KUOTANYA]      K U O T A NY A sp
 KUPANG          [KUPANG]        K U P A NG sp
 KUPING          [KUPING]        K U P I NG sp
 KURANG          [KURANG]        K U R A NG sp
+KURIR           [KURIR]         K U R I R sp
 KURS            [KURS]          K U R S sp
 KURSI           [KURSI]         K U R S I sp
 KURTUBI         [KURTUBI]       K U R T U B I sp
@@ -3309,6 +3317,7 @@ LATIHAN         [LATIHAN]       L A T I H A N sp
 LAUT            [LAUT]          L A U T sp
 LAVA            [LAVA]          L A V A sp
 LAW             [LAW]           L O W sp
+LAWAN           [LAWAN]         L A W A N sp
 LAWANNYA        [LAWANNYA]      L A W A N NY A sp
 LAWATAN         [LAWATAN]       L A W A T A N sp
 LAWU            [LAWU]          L A W U sp
@@ -3454,6 +3463,7 @@ MAHYUDIN        [MAHYUDIN]      M A H Y U D I N sp
 MAINANNYA       [MAINANNYA]     M A I N A N NY A sp
 MAJA            [MAJA]          M A J A sp
 MAJALAH         [MAJALAH]       M A J A L A H sp
+MAJAPAHIT       [MAJAPAHIT]     M A J A P A H I T sp
 MAJELIS         [MAJELIS]       M A J e L I S sp
 MAJU            [MAJU]          M A J U sp
 MAKA            [MAKA]          M A K A sp
@@ -3461,6 +3471,7 @@ MAKAM           [MAKAM]         M A K A M sp
 MAKANAN         [MAKANAN]       M A K A N A N sp
 MAKANNYA        [MAKANNYA]      M A K A N NY A sp
 MAKANYA         [MAKANYA]       M A K A NY A sp
+MAKARIM         [MAKARIM]       M A K A R I M sp
 MAKASSAR        [MAKASSAR]      M A K A S S A R sp
 MAKHLUK         [MAKHLUK]       M A H L U K sp
 MAKIN           [MAKIN]         M A K I N sp
@@ -3737,6 +3748,7 @@ MEMPERINCI      [MEMPERINCI]    M e M P e R I N C I sp
 MEMPERLAMBAT    [MEMPERLAMBAT]  M e M P e R L A M B A T sp
 MEMPERLUAS      [MEMPERLUAS]    M e M P e R L U A S sp
 MEMPEROLEH      [MEMPEROLEH]    M e M P e R O L E H sp
+MEMPERPANJANG   [MEMPERPANJANG] M e M P e R P A N J A NG sp
 MEMPERSIAPKAN   [MEMPERSIAPKAN] M e M P e R S I A P K A N sp
 MEMPERSINGKAT   [MEMPERSINGKAT] M e M P e R S I NG K A T sp
 MEMPERTAHANKAN  [MEMPERTAHANKAN] M e M P e R T A H A N K A N sp
@@ -3879,6 +3891,7 @@ MENGECAM        [MENGECAM]      M e NG e C A M sp
 MENGECOH        [MENGECOH]      M e NG E C O H sp
 MENGEDARKAN     [MENGEDARKAN]   M e NG E D A R K A N sp
 MENGEFEKTIFKAN  [MENGEFEKTIFKAN] M e NG E F E K T I F K A N sp
+MENGEJA         [MENGEJA]       M e NG E J A sp
 MENGEJAR        [MENGEJAR]      M e NG e J A R sp
 MENGEKSEKUSI    [MENGEKSEKUSI]  M e NG E K S E K U S I sp
 MENGELABUI      [MENGELABUI]    M e NG e L A B U I sp
@@ -3901,6 +3914,7 @@ MENGERTI        [MENGERTI]      M e NG e R T I sp
 MENGESAHKAN     [MENGESAHKAN]   M e NG e S A H K A N sp
 MENGETAHUI      [MENGETAHUI]    M e NG e T A H U I sp
 MENGEVALUASI    [MENGEVALUASI]  M e NG E V A L U A S I sp
+MENGGAGALKAN    [MENGGAGALKAN]  M e NG G A G A L K A N sp
 MENGGANDENG     [MENGGANDENG]   M e NG G A N D E NG sp
 MENGGANDRUNGI   [MENGGANDRUNGI] M e NG G A N D R U NG I sp
 MENGGANGGU      [MENGGANGGU]    M e NG G A NG G U sp
@@ -4350,6 +4364,7 @@ MUZADI          [MUZADI]        M U Z A D I sp
 MUZAWI          [MUZAWI]        M U Z A W I sp
 MYANMAR         [MYANMAR]       M Y A N M A R sp
 NABI            [NABI]          N A B I sp
+NABIEL          [NABIEL]        N A B I L sp
 NABLUS          [NABLUS]        N A B L U S sp
 NADA            [NADA]          N A D A sp
 NADANYA         [NADANYA]       N A D A NY A sp
@@ -4684,7 +4699,6 @@ PALU            [PALU]          P A L U sp
 PAM             [PAM]           P A M sp
 PAMERAN         [PAMERAN]       P A M E R A N sp
 PAMFLET         [PAMFLET]       P A M F L E T sp
-PAMOR           [PAMOR]         P A M O R sp
 PAN             [PAN]           P A N sp
 PANAS           [PANAS]         P A N A S sp
 PANCASILA       [PANCASILA]     P A N C A S I L A sp
@@ -5331,6 +5345,7 @@ PROLEGNAS       [PROLEGNAS]     P R O L E G N A S sp
 PROMOSI         [PROMOSI]       P R O M O S I sp
 PROPER          [PROPER]        P R O P e R sp
 PROPERTI        [PROPERTI]      P R O P e R T I sp
+PROPINSI        [PROPINSI]      P R O P I N S I sp
 PROPORSIONAL    [PROPORSIONAL]  P R O P O R S I O N A L sp
 PROSEDUR        [PROSEDUR]      P R O S e D U R sp
 PROSEDURNYA     [PROSEDURNYA]   P R O S e D U R NY A sp
@@ -5374,6 +5389,7 @@ PULSA           [PULSA]         P U L S A sp
 PULUH           [PULUH]         P U L U H sp
 PULUHAN         [PULUHAN]       P U L U H A N sp
 PUN             [PUN]           P U N sp
+PUNAH           [PUNAH]         P U N A H sp
 PUNCAK          [PUNCAK]        P U N C A K sp
 PUNYA           [PUNYA]         P U NY A sp
 PUPR            [PUPR]          P E U P E E R sp
@@ -5835,6 +5851,7 @@ SEKJEN          [SEKJEN]        S E K J E N sp
 SEKNEG          [SEKNEG]        S E K N E G sp
 SEKOLAH         [SEKOLAH]       S e K O L A H sp
 SEKOLAHNYA      [SEKOLAHNYA]    S e K O L A H NY A sp
+SEKRETARIAT     [SEKRETARIAT]   S e K R e T A R I A T sp
 SEKRETARIS      [SEKRETARIS]    S E K R e T A R I S sp
 SEKSAMA         [SEKSAMA]       S e K S A M A sp
 SEKSI           [SEKSI]         S E K S I sp
@@ -5903,7 +5920,6 @@ SENANG          [SENANG]        S e N A NG sp
 SENANTIASA      [SENANTIASA]    S e N A N T I A S A sp
 SENATOR         [SENATOR]       S E N A T O R sp
 SENDIRI         [SENDIRI]       S e N D I R I sp
-SENEN           [SENEN]         S e N E N sp
 SENEWEN         [SENEWEN]       S e N E W e N sp
 SENGAJA         [SENGAJA]       S e NG A J A sp
 SENGKETA        [SENGKETA]      S e NG K E T A sp
@@ -6199,9 +6215,11 @@ SUBCERITA       [SUBCERITA]     S U B C e R I T A sp
 SUBDUKSI        [SUBDUKSI]      S U B D U K S I sp
 SUBIYAKTO       [SUBIYAKTO]     S U B I Y A K T O sp
 SUBSEKSI        [SUBSEKSI]      S U B S E K S I sp
+SUBSTANSI       [SUBSTANSI]     S U B S T A N S I sp
 SUBSTANSINYA    [SUBSTANSINYA]  S U B S T A N S I NY A sp
 SUBTANSIAL      [SUBTANSIAL]    S U B T A N S I Y A L sp
 SUBTROPIS       [SUBTROPIS]     S U B T R O P I S sp
+SUBUR           [SUBUR]         S U B U R sp
 SUBVERSI        [SUBVERSI]      S U B V E R S I sp
 SUCI            [SUCI]          S U C I sp
 SUCIPTO         [SUCIPTO]       S U C I P T O sp
@@ -6277,6 +6295,7 @@ SURAHMAN        [SURAHMAN]      S U R A H M A N sp
 SURAIYA         [SURAIYA]       S U R AI Y A sp
 SURAJI          [SURAJI]        S U R A J I sp
 SURAT           [SURAT]         S U R A T sp
+SURATI          [SURATI]        S U R A T I sp
 SURAU           [SURAU]         S U R AU sp
 SURI            [SURI]          S U R I sp
 SURIAH          [SURIAH]        S U R I Y A H sp
@@ -6668,6 +6687,7 @@ TIDAK           [TIDAK]         T I D A K sp
 TIDUR           [TIDUR]         T I D U R sp
 TIGA            [TIGA]          T I G A sp
 TIGA-EMPAT      [TIGA-EMPAT]    T I G A e M P A T sp
+TIK             [TIK]           T E I K A sp
 TIKET           [TIKET]         T I K E T sp
 TIKETNYA        [TIKETNYA]      T I K E T NY A sp
 TIM             [TIM]           T I M sp
@@ -6829,6 +6849,7 @@ UI              [UI]            U I sp
 UJANG           [UJANG]         U J A NG sp
 UJAR            [UJAR]          U J A R sp
 UJARNYA         [UJARNYA]       U J A R NY A sp
+UJE             [UJE]           U J e sp
 UJI             [UJI]           U J I sp
 UJIAN           [UJIAN]         U J I A N sp
 UJONG           [UJONG]         U J O NG sp
@@ -6900,6 +6921,7 @@ USIKUM          [USIKUM]        U S I K U M sp
 USKUP           [USKUP]         U S K U P sp
 USMAN           [USMAN]         U S M A N sp
 USTAD           [USTAD]         U S T A D sp
+USTADS          [USTADS]        U S T A D S sp
 USUL            [USUL]          U S U L sp
 USULAN          [USULAN]        U S U L A N sp
 USULAN-USULAN   [USULAN-USULAN] U S U L A N U S U L A N sp
@@ -7102,7 +7124,6 @@ YANDRI          [YANDRI]        Y A N D R I sp
 YANG            [YANG]          Y A NG sp
 YANI            [YANI]          Y A N I sp
 YANUSA          [YANUSA]        Y A N U S A sp
-YAOHAN          [YAOHAN]        Y O H A N sp
 YASIN           [YASIN]         Y A S I N sp
 YASSIN          [YASSIN]        Y A S S I N sp
 YAUMAZIDAH      [YAUMAZIDAH]    Y AU M A Z I D A H sp

@@ -1,8 +1,8 @@
 MFCC_MAPPING_FILE = 'scripts/files/mfcc/codetrain_gen.scp'
-MFCC_LIST_FILE = "cross_validation/test_set_1/train_list.scp"
+MFCC_LIST_FILE = "cross_validation/test_set_2/train_list.scp"
 WAV_CONF = 'scripts/files/mfcc/wav_config'
 
-PROMPTS_FILE = "cross_validation/test_set_1/prompts.tsv"
+PROMPTS_FILE = "cross_validation/test_set_2/prompts.tsv"
 MY_DICT_FILE = "scripts/files/data/selfmade-dict.txt"
 
 WORDLIST_FILE = "scripts/files/wlist"

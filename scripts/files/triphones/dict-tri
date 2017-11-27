@@ -5953,6 +5953,8 @@ SENJATA         S+e S-e+N e-N+J N-J+A J-A+T A-T+A T-A sp
 SENO            S+E S-E+N E-N+O N-O sp
 SENSOR          S+E S-E+N E-N+S N-S+O S-O+R O-R sp
 SENSORNYA       S+E S-E+N E-N+S N-S+O S-O+R O-R+NY R-NY+A NY-A sp
+SENT-END        sil
+SENT-START      sil
 SENTIMEN        S+E S-E+N E-N+T N-T+I T-I+M I-M+E M-E+N E-N sp
 SENTRAL         S+E S-E+N E-N+T N-T+R T-R+A R-A+L A-L sp
 SENTRALISME     S+E S-E+N E-N+T N-T+R T-R+A R-A+L A-L+I L-I+S I-S+M S-M+e M-e sp

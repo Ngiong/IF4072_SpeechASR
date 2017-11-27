@@ -3,10 +3,10 @@ WARNING: no script file scripts/files/data/selfmade-dict.txt.ded
 Dictionary Usage Statistics
 ---------------------------
   Dictionary    TotalWords WordsUsed  TotalProns PronsUsed
-selfmade-dic      7243       7243       7243       7243
-    dict-tri      7243       7243       7243       7243
+selfmade-dic      7245       7245       7245       7245
+    dict-tri      7245       7245       7245       7245
 
-7243 words required, 0 missing
+7245 words required, 0 missing
 
 New Phone Usage Counts
 ---------------------
@@ -44,5 +44,6 @@ New Phone Usage Counts
  32. X     :     2
  33. AU    :    98
  34. OI    :     8
+ 35. sil   :     2
 
 Dictionary scripts/files/triphones/dict-tri created
