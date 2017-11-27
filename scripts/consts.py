@@ -2,7 +2,7 @@ MFCC_MAPPING_FILE = 'scripts/files/mfcc/codetrain_gen.scp'
 MFCC_LIST_FILE = 'scripts/files/mfcc/mfcc_list.scp'
 WAV_CONF = 'scripts/files/mfcc/wav_config'
 
-PROMPTS_FILE = "scripts/files/data/prompts.tsv"
+PROMPTS_FILE = "cross_validation/test_set_1/prompts.tsv"
 MY_DICT_FILE = "scripts/files/data/selfmade-dict.txt"
 
 WORDLIST_FILE = "scripts/files/wlist"
@@ -26,7 +26,7 @@ HMM_CONF_FILE = "scripts/files/hmm/hmm.conf"
 HMM_PROTO_FILE = "scripts/files/hmm/proto"
 HMM_OUTPUT_DIR = "hmm_result/"
 
-# TRIPHONE FILE 
+# TRIPHONE FILE
 MKTRI_FILE = "scripts/files/triphones/mktri.led"
 TRIPHONE1_FILE = "scripts/files/triphones/triphones1"
 WINTRI_MLF_FILE = "scripts/files/triphones/wintri.mlf"

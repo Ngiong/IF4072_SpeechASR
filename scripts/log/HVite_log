@@ -1,4 +1,4 @@
-HVite -A -D -t 1 -l * -o SWT -b SENT-END -C scripts/files/hmm/hmm.conf -H hmm_result/hmm7/macros -H hmm_result/hmm7/hmmdefs -i scripts/files/mlf/result/aligned.mlf -m -t 250.0 150.0 1000.0 -y lab -a -I scripts/files/mlf/result/word.mlf -S scripts/files/mfcc/mfcc_list.scp scripts/files/dict scripts/files/mlf/monophones1 
+HVite -A -D -T 1 -l Dataset_MFCC HMM README.md a.log aligned.mlf cross_validation flog fulllist grammar hmm_result hvite.log lm.arpa mktri.hed recout_test_1.mlf recout_test_2.mlf recout_test_3.mlf recout_test_4.mlf recout_test_4_triphone.mlf recout_test_5.mlf recout_test_5_triphone.mlf reza.py run_all.py scripts stats tiedlist transcript trees -o SWT -b SENT-END -C scripts/files/hmm/hmm.conf -H hmm_result/hmm7/macros -H hmm_result/hmm7/hmmdefs -i scripts/files/mlf/result/aligned.mlf -m -t 250.0 150.0 1000.0 -y lab -a -I scripts/files/mlf/result/word.mlf -S scripts/files/mfcc/mfcc_list.scp scripts/files/dict scripts/files/mlf/monophones1 
 
 HTK Configuration Parameters[10]
   Module/Tool     Parameter                  Value
@@ -12,18 +12,4 @@ HTK Configuration Parameters[10]
 #                 SAVECOMPRESSED              TRUE
 #                 TARGETRATE         100000.000000
 #                 TARGETKIND          MFCC_0_D_N_Z
-
-
-HTK Configuration Parameters[10]
-  Module/Tool     Parameter                  Value
-                  NUMCEPS                       12
-                  CEPLIFTER                     22
-                  NUMCHANS                      26
-                  PREEMCOEF               0.970000
-                  USEHAMMING                  TRUE
-                  WINDOWSIZE         250000.000000
-                  SAVEWITHCRC                 TRUE
-                  SAVECOMPRESSED              TRUE
-                  TARGETRATE         100000.000000
-                  TARGETKIND          MFCC_0_D_N_Z
 
