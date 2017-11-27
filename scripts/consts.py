@@ -1,5 +1,5 @@
 MFCC_MAPPING_FILE = 'scripts/files/mfcc/codetrain_gen.scp'
-MFCC_LIST_FILE = 'scripts/files/mfcc/mfcc_list.scp'
+MFCC_LIST_FILE = "cross_validation/test_set_1/train_list.scp"
 WAV_CONF = 'scripts/files/mfcc/wav_config'
 
 PROMPTS_FILE = "cross_validation/test_set_1/prompts.tsv"
