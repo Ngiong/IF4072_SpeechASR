@@ -38,3 +38,6 @@ def create_mlf_phone():
     cmd = "HLEd -A -D -T 1 -l '*' -d %s -i %s %s %s"
     args = (HTK_DICT_FILE, PHONES1_MLF_FILE, MKPHONES1_FILE, WORDS_MLF_FILE)
     utils.run(cmd % args)
+    
+    with open(MONOPHONE1_FILE, 'a') as fout:
+        fout.write('sil')
