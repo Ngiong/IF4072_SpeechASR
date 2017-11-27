@@ -42,14 +42,14 @@ def create_mlf_word():
 
 def create_mlf_phone():
     # PHONES0.MLF
-    # HLEd -A -D -T 1 -l '*' -d {dict} -i {phones.mlf} {mkphones0.led} {word-level.mlf}
-    cmd = "HLEd -A -D -T 1 -l '*' -d %s -i %s %s %s"
+    # HLEd -A -D -T 1 -l * -d {dict} -i {phones.mlf} {mkphones0.led} {word-level.mlf}
+    cmd = "HLEd -A -D -T 1 -l * -d %s -i %s %s %s"
     args = (HTK_DICT_FILE, PHONES0_MLF_FILE, MKPHONES0_FILE, WORDS_MLF_FILE)
     utils.run(cmd % args)
 
     # PHONES1.MLF
     # HLEd -A -D -T 1 -l * -d dict -i phones1.mlf mkphones1.led words.mlf
-    cmd = "HLEd -A -D -T 1 -l '*' -d %s -i %s %s %s"
+    cmd = "HLEd -A -D -T 1 -l * -d %s -i %s %s %s"
     args = (HTK_DICT_FILE, PHONES1_MLF_FILE, MKPHONES1_FILE, WORDS_MLF_FILE)
     utils.run(cmd % args)
 

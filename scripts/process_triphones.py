@@ -9,7 +9,7 @@ def make_triphone1():
 		outfile.write("WB sil\n")
 		outfile.write("TC    ")
 
-	# HLEd -n triphones1 -l '*' -i wintri.mlf mktri.led aligned.mlf
+	# HLEd -n triphones1 -l * -i wintri.mlf mktri.led aligned.mlf
 	cmd = "HLEd -A -D -T 1 -n %s -l * -i %s %s %s"
 	args = (TRIPHONE1_FILE, WINTRI_MLF_FILE, MKTRI_FILE, ALIGNED_MLF_FILE)
 	utils.run(cmd % args)
