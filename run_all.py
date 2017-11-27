@@ -10,10 +10,10 @@ if __name__ == '__main__':
     mlf.create_mlf_phone()
 
     # generate files for hmm0
-    hmm.prepare_hmm()
+    # hmm.prepare_hmm()
 
     # run hmm for n epoch
     hmm.run_hmm(7)
 
     # make triphones
-    triphones.execute_triphones()
+    # triphones.execute_triphones()

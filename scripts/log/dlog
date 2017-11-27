@@ -3,46 +3,47 @@ WARNING: no script file scripts/files/data/selfmade-dict.txt.ded
 Dictionary Usage Statistics
 ---------------------------
   Dictionary    TotalWords WordsUsed  TotalProns PronsUsed
-selfmade-dic      7243       3319       7243       3319
-        dict      3319       3319       3319       3319
+selfmade-dic      7245       7195       7245       7195
+        dict      7195       7195       7195       7195
 
-3319 words required, 0 missing
+7195 words required, 0 missing
 
 New Phone Usage Counts
 ---------------------
-  1. A     :  3708
-  2. B     :   616
-  3. Y     :   165
-  4. sp    :  3319
-  5. S     :  1097
-  6. D     :   671
-  7. U     :  1152
-  8. L     :   799
-  9. R     :  1290
- 10. H     :   524
- 11. M     :  1048
- 12. N     :  1446
- 13. e     :  1285
- 14. O     :   751
- 15. I     :  1703
- 16. T     :  1081
- 17. E     :   682
- 18. Z     :    71
- 19. C     :   168
- 20. NY    :   247
- 21. NG    :   486
- 22. P     :   751
- 23. K     :  1115
- 24. J     :   233
- 25. F     :   196
- 26. G     :   291
- 27. W     :   177
- 28. Q     :    12
- 29. V     :    49
- 30. SY    :    40
- 31. X     :     1
- 32. AI    :    92
- 33. AU    :    51
- 34. OI    :     4
+  1. A     :  8178
+  2. sp    :  7193
+  3. B     :  1394
+  4. D     :  1544
+  5. I     :  3948
+  6. AI    :   180
+  7. K     :  2454
+  8. N     :  3365
+  9. NG    :  1117
+ 10. Y     :   382
+ 11. S     :  2429
+ 12. E     :  1549
+ 13. L     :  1809
+ 14. U     :  2444
+ 15. H     :  1187
+ 16. R     :  2923
+ 17. M     :  2348
+ 18. P     :  1584
+ 19. e     :  2901
+ 20. O     :  1823
+ 21. G     :   675
+ 22. NY    :   584
+ 23. T     :  2265
+ 24. Z     :   170
+ 25. C     :   384
+ 26. W     :   443
+ 27. J     :   556
+ 28. V     :   134
+ 29. F     :   396
+ 30. Q     :    25
+ 31. SY    :   106
+ 32. X     :     2
+ 33. AU    :    96
+ 34. OI    :     8
+ 35. sil   :     2
 
 Dictionary scripts/files/dict created
