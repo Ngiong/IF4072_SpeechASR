@@ -9,7 +9,7 @@ def make_triphone1():
 		outfile.write("WB sil\n")
 		outfile.write("TC    ")
 
-	# HLEd -n triphones1 -l '*' -i wintri.mlf mktri.led aligned.mlf
+	# HLEd -n triphones1 -l * -i wintri.mlf mktri.led aligned.mlf
 	cmd = "HLEd -A -D -T 1 -n %s -l * -i %s %s %s"
 	args = (TRIPHONE1_FILE, WINTRI_MLF_FILE, MKTRI_FILE, ALIGNED_MLF_FILE)
 	utils.run(cmd % args)
@@ -26,7 +26,7 @@ def train_hmm10_hmm12():
 			os.mkdir(hmm_dir)
 
 	# HMM10
-	# HHEd -A -D -T 1 -H hmm9/macros -H hmm9/hmmdefs -M hmm10 mktri.hed monophones1 
+	# HHEd -A -D -T 1 -H hmm9/macros -H hmm9/hmmdefs -M hmm10 mktri.hed monophones1
 	cmd = "HHEd -A -D -T 1 -H hmm_result/hmm9/macros -H hmm_result/hmm9/hmmdefs -M hmm_result/hmm10 %s %s"
 	args = (MKTRI_HED_FILE, MONOPHONE1_FILE)
 	utils.run(cmd % args)
@@ -38,7 +38,7 @@ def train_hmm10_hmm12():
 	utils.run(cmd % args)
 
 	# HMM12
-	# HERest  -A -D -T 1 -C config -I wintri.mlf -t 250.0 150.0 3000.0 -s stats -S train.scp -H hmm11/macros -H hmm11/hmmdefs -M hmm12 triphones1 
+	# HERest  -A -D -T 1 -C config -I wintri.mlf -t 250.0 150.0 3000.0 -s stats -S train.scp -H hmm11/macros -H hmm11/hmmdefs -M hmm12 triphones1
 	cmd = "HERest -A -D -T 1 -C %s -I %s -t 250.0 150.0 3000.0 -s %s -S %s -H hmm_result/hmm11/macros -H hmm_result/hmm11/hmmdefs -M hmm_result/hmm12 %s "
 	args = (HMM_CONF_FILE, WINTRI_MLF_FILE, STAT_FILE, MFCC_LIST_FILE, TRIPHONE1_FILE)
 	utils.run(cmd % args)
@@ -67,7 +67,7 @@ def create_treeHED():
 			fout.write(line)
 	fout.close()
 
-	# using julia 
+	# using julia
 	# julia ../bin/mkclscript.jl monophones0 tree.hed
 	cmd = "julia scripts/julia/mkclscript.jl %s %s"
 	args = (MONOPHONE0_FILE, TREE_HED_FILE)
@@ -96,7 +96,7 @@ def train_hmm13_hmm15():
 	# HERest -A -D -T 1 -T 1 -C config -I wintri.mlf  -t 250.0 150.0 3000.0 -S train.scp -H hmm14/macros -H hmm14/hmmdefs -M hmm15 tiedlist
 	cmd = "HERest -A -D -T 1 -T 1 -C %s -I %s  -t 250.0 150.0 3000.0 -S %s -H hmm_result/hmm14/macros -H hmm_result/hmm14/hmmdefs -M hmm_result/hmm15 tiedlist"
 	args = (HMM_CONF_FILE, WINTRI_MLF_FILE, MFCC_LIST_FILE)
-	utils.run(cmd % args)'''	
+	utils.run(cmd % args)'''
 
 def execute_triphones():
 	#make_triphone1()
