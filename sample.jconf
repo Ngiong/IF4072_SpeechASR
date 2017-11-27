@@ -1,5 +1,7 @@
 # VoxForge configurations:
--nlr Dataset/lm.arpa     # finite state automaton grammar file
+#-nlr Dataset/lm.arpa     # finite state automaton grammar file
+#-v scripts/files/dict      # pronunciation dictionary
+-dfa grammar/upnormal.dfa
 -v scripts/files/dict      # pronunciation dictionary
 -h hmm_result/hmm9/hmmdefs    # acoustic HMM (ascii or Julius binary)
 -spmodel "sp"		    # name of a short-pause silence model

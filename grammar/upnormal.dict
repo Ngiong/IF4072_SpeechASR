@@ -1,12 +1,12 @@
 0	[<s>]	sil
 1	[</s>]	sil
-2	[PESAN]	p e s a n
-3	[MI]	m i
-3	[NASI]	n a s i
+2	[pesan]	p e s a n
+3	[mi]	m i
+3	[nasi]	n a s i
 4	[teh]	t E h
 4	[kopi]	k o p i
-5	[MI]	m i
-5	[NASI]	n a s i
-6	[DINGIN]	d i ng i n
-6	[PANAS]	p a n a s
-7	[GORENG]	g o r e ng
+5	[sosis]	s o s i s
+5	[telor]	t e l o r
+6	[dingin]	d i ng i n
+6	[panas]	p a n a s
+7	[goreng]	g o r e ng
